@@ -1,0 +1,15 @@
+-js bin/head.js
+-main head.App
+-cp src
+-lib om.app
+-lib om.activity
+-lib om.android
+-lib om.net
+-dce full
+-debug
+
+#-D android
+#-cmd lessc res/style/head.less bin/assets/head.css
+#-cmd cp -r res/android/* bin/
+#-cmd mkdir -p bin/libs && cp /home/tong/dev/lib/om.android/bin/om.jar bin/libs
+#-cmd cd bin && ant debug
